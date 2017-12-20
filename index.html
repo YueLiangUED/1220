@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less"/>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <script src="js/less-1.7.0.min.js"></script>
+    <script charset="utf-8" type="text/javascript">
+        var less = {
+            env: 'development',
+            poll: 1000
+        };
+        less.watch;
+    </script>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/imgLoader.js"></script>
+</head>
+<body>
+<!--首页-->
+<section id="firstPage">
+    <header>
+        <span id="goMyPrize"></span>
+    </header>
+    <main>
+        <ul class="clear" id="gameWrap">
+            <li>
+                <div></div>
+                <div class="girl"></div>
+            </li>
+            <li>
+                <div></div>
+                <div class="nothing"></div>
+            </li>
+            <li>
+                <div></div>
+                <div class="nothing"></div>
+            </li>
+            <li>
+                <div></div>
+                <div class="girl"></div>
+            </li>
+            <li>
+                <div></div>
+                <div class="nothing"></div>
+            </li>
+            <li>
+                <div></div>
+                <div class="girl"></div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <div></div>
+        <div>
+            <p>
+                <span>活动时间:</span>
+                2017年9月20日-9月25日
+            </p>
+            <p>
+                <span>奖项设置:</span>
+            </p>
+            <ul>
+                <li>
+                    一等奖：<span>100元京东电子卡</span>
+                </li>
+                <li>
+                    二等奖：<span>1G电信本地流量</span>
+                </li>
+                <li>
+                    三等奖：<span>10元电信话费</span>
+                </li>
+                <li>
+                    参与奖：<span>50M本地流量</span>
+                </li>
+            </ul>
+            <p>
+                <span>活动规则:</span>
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;每天默认一次翻牌机会，体验“中国电信天津客服”微信公众号中“轻松查”菜单内服务可额外获得一次，每天每位用户最多有两次机会；
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;每次可通过活动页面中的三张牌中，自行翻开一张牌，随机中奖；
+            </p>
+            <p>
+                <span>说&nbsp;&nbsp;&nbsp;&nbsp;明:</span>
+            </p>
+            <p>
+                1、活动奖励在中奖后五个工作日内充值到注册手机号中，可通过公众号点击菜单 “轻松查-更多服务-套餐余量”查询；
+            </p>
+            <p>
+                2、京东电子卡有限期为自激活日期起36个月，京东卡不记名、不挂失、不计息、不兑换、不可修改密码，请妥善保管账号及密码。
+            </p>
+            <p>
+                3、本地流量包奖品，赠送后当月未使用完可结转至下月，次月未使用完失效，主副卡不共享；
+            </p>
+            <p>
+                4、易通卡、易通9分卡、大三元等OCS套餐、流量时长型计费及不限量套餐的用户无法获得活动奖项中的流量奖项；
+            </p>
+            <p>
+                5、仅限天津电信用户参与，请保证号码状态正常在用。
+            </p>
+        </div>
+    </footer>
+</section>
+<!--我的奖品页-->
+<section id="myPrize">
+    <div></div>
+    <div>
+        <ul>
+            <li>
+                <p>翼支付</p>
+                <p>100<span>元</span></p>
+                <p>说明说明说明说明说明说明说明</p>
+            </li>
+            <li>
+                <p>电信话费</p>
+                <p>50<span>元</span></p>
+                <p>说明说明说明说明说明说明说明</p>
+            </li>
+            <li>
+                <p>电信流量</p>
+                <p>300<span>M</span></p>
+                <p>说明说明说明说明说明说明说明</p>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <span id="goFirstPage"></span>
+    </div>
+</section>
+<!--遮罩层-->
+<div id="mask" class="mask"></div>
+<!--中奖弹窗-->
+<div class="tc_1">
+    <p>恭喜您!</p>
+    <p>电信50元花费被你找到了<br>快去我的奖品里查看吧</p>
+    <div class="tcBtn"></div>
+</div>
+<!--未中奖弹窗-->
+<div class="tc_2 tt">
+    <div>
+        <span></span>
+    </div>
+    <div>
+        <p>很遗憾</p>
+        <p>您没有找到两个天小翼<br>礼物就这么飘走了</p>
+        <span class="tcBtn_2"></span>
+    </div>
+</div>
+<!--提示弹窗-->
+<div class="tc_3 tt">
+    <div>提示</div>
+    <div>
+        <p>您没有找到两个天小翼<br>礼物就这么飘走了</p>
+        <span class="tcBtn_2"></span>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/index.js"></script>

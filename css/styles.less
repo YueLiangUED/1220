@@ -1,0 +1,333 @@
+html,body{
+  font-family: "Microsoft YaHei";
+}
+#firstPage header{
+  position: relative;
+  width: 7.5rem;
+  height: 4.26rem;
+  background: url("../images/firBg_02.png") center no-repeat;
+  background-size: cover;
+  span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1.8rem;
+    height: 1.11rem;
+  }
+}
+#firstPage main{
+  position: relative;
+  width: 7.5rem;
+  height: 7.61rem;
+  background: url("../images/firBg_03.png") center no-repeat;
+  background-size: cover;
+  ul{
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6.1rem;
+    height: 5.3rem;
+    li{
+      position: relative;
+      float: left;
+      margin: 0 .17rem .16rem 0;
+      width: 1.92rem;
+      height: 2.57rem;
+      perspective: 10rem;
+      perspective-origin: 50% 50%;
+
+      div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all 1s ease;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+      }
+      div:nth-child(1){
+        background: url("../images/card_default.png") center no-repeat;
+        background-size: cover;
+        z-index: 2;
+      }
+      div:nth-child(2){
+        z-index: 1;
+      }
+      div:nth-child(2).girl{
+        background: url("../images/card_girl.png") center no-repeat;
+        background-size: cover;
+      }
+      div:nth-child(2).nothing{
+        background: url("../images/card_nothing.png") center no-repeat;
+        background-size: cover;
+      }
+    }
+    li:nth-child(3),li:nth-child(6){
+      margin-right: 0;
+    }
+    li.act{
+      div:nth-child(1){
+        transform: rotateY(180deg);
+        z-index: 1;
+      }
+      div:nth-child(2){
+        transform: rotateY(360deg);
+        z-index: 2;
+      }
+    }
+  }
+}
+#firstPage footer{
+  div:nth-child(1){
+    width: 7.5rem;
+    height: .79rem;
+    background: url("../images/firBg_04.png") center no-repeat;
+    background-size: cover;
+  }
+  div:nth-child(2){
+    box-sizing: border-box;
+    padding: .25rem .77rem;
+    width: 7.5rem;
+    height: 10rem;
+    background: url("../images/firBg_05.png") center no-repeat;
+    background-size: cover;
+    p{
+      font-size: .22rem;
+      text-align: justify;
+      color: #ffffff;
+      span{
+        display: inline-block;
+        margin-bottom: .15rem;
+        width: 1.24rem;
+        height: .35rem;
+        text-align: center;
+        border-radius: .5rem;
+        color: #c90302;
+        background-color: #feea4f;
+      }
+    }
+    p:nth-child(6){
+      margin-bottom: .1rem;
+    }
+    ul{
+      position: relative;
+      margin: 0 auto .1rem;
+      width: 5.8rem;
+      height: .75rem;
+      li{
+        position: absolute;
+        font-size: .22rem;
+        color: #ffffff;
+        span{
+          font-weight: bold;
+        }
+      }
+      li:nth-child(1){
+        left: 0;
+        top: 0;
+      }
+      li:nth-child(2){
+        top: 0;
+        left: 3rem;
+      }
+      li:nth-child(3){
+        left: 0;
+        bottom: 0;
+      }
+      li:nth-child(4){
+        left: 3rem;
+        bottom: 0;
+      }
+    }
+  }
+}
+#myPrize{
+  display: none;
+  div{
+    width: 7.5rem;
+  }
+  div:nth-child(1){
+    height: 2.04rem;
+    background: url("../images/myPrizeBg_02.png") center no-repeat;
+    background-size: cover;
+  }
+  div:nth-child(2){
+    height: 8.02rem;
+    background: url("../images/myPrizeBg_03.png") center no-repeat;
+    background-size: cover;
+    ul{
+      overflow: scroll;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: .15rem 0;
+      width: 6.25rem;
+      height: 8.02rem;
+      li{
+        position: relative;
+        margin: 0 auto .03rem;
+        width: 5.98rem;
+        height: 1.92rem;
+        background: url("../images/prizeBg.png") center no-repeat;
+        background-size: cover;
+        p{
+          position: absolute;
+          color: #ffffff;
+        }
+        p:nth-child(1){
+          top: .5rem;
+          left: .6rem;
+          font-size: .34rem;
+        }
+        p:nth-child(2){
+          right: .38rem;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          height: .5rem;
+          font-size: .5rem;
+          line-height: .5rem;
+          span{
+            font-size: .24rem;
+          }
+        }
+        p:nth-child(3){
+          width: 3.5rem;
+          left: .62rem;
+          top: 1rem;
+          font-size: .2rem;
+        }
+      }
+    }
+  }
+  div:nth-child(3){
+    box-sizing: border-box;
+    padding-top: .56rem;
+    height: 1.98rem;
+    background: url("../images/myPrizeBg_04.png") center no-repeat;
+    background-size: cover;
+    span{
+      display: block;
+      margin: 0 auto;
+      width: 6.74rem;
+      height: .86rem;
+      background: url("../images/myPrizePageBtn.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+.mask {
+  position: absolute;
+  top: 0px;
+  filter: alpha(opacity=80);
+  background-color: #000;
+  z-index: 100;
+  left: 0px;
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+}
+.tc_1{
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 2.55rem 0 0;
+  width: 4.79rem;
+  height: 5.21rem;
+  background: url("../images/tcBg.png") center no-repeat;
+  background-size: cover;
+  z-index: 500;
+  p:nth-child(1){
+    margin-bottom: .2rem;
+    font-size: .34rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  p:nth-child(2){
+    font-size: .22rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .24rem;
+    margin: auto;
+    width: 2.48rem;
+    height: .66rem;
+    background: url("../images/tcBtn_1.png") center no-repeat;
+    background-size: cover;
+  }
+}
+.tt{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 20%;
+  margin: auto;
+  width: 4.13rem;
+  z-index: 500;
+  div{
+    width: 100%;
+  }
+  div:nth-child(1){
+    position: relative;
+    height: .93rem;
+    border-radius: .1rem .1rem 0 0;
+    background-color: #e53501;
+    span{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -.23rem;
+      margin: auto;
+      width: .95rem;
+      height: .95rem;
+      background: url("../images/cry.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+  div:nth-child(2){
+    position: relative;
+    height: 2.87rem;
+    text-align: center;
+    border-radius: 0 0 .1rem .1rem;
+    background-color: #ffea9f;
+    span{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: .25rem;
+      margin: auto;
+      width: 2.48rem;
+      height: .66rem;
+      background: url("../images/tcBtn_2.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+}
+.tc_2{
+  display: none;
+  div:nth-child(2) p:nth-child(1){
+    font-size: .34rem;
+    color: #333333;
+    line-height: .9rem;
+  }
+}
+.tc_3{
+  display: none;
+  div:nth-child(1){
+    font-size: .34rem;
+    text-align: center;
+    line-height: .93rem;
+    color: #ffffff;
+  }
+  div:nth-child(2){
+    box-sizing: border-box;
+    padding: .68rem 0;
+  }
+}
