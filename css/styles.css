@@ -74,7 +74,7 @@ body {
   z-index: 1;
 }
 #firstPage main ul li.act div:nth-child(2) {
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
   z-index: 2;
 }
 #firstPage footer div:nth-child(1) {
