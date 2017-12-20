@@ -6,20 +6,64 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="css/reset.min.css">
-    <link rel="stylesheet/less" type="text/css" href="css/styles.less"/>
-    <!--<link rel="stylesheet" href="css/style.css">-->
-    <script src="js/less-1.7.0.min.js"></script>
+    <!--<link rel="stylesheet/less" type="text/css" href="css/styles.less"/>-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--<script src="js/less-1.7.0.min.js"></script>
     <script charset="utf-8" type="text/javascript">
         var less = {
             env: 'development',
             poll: 1000
         };
         less.watch;
-    </script>
+    </script>-->
     <script src="js/jquery-1.10.1.min.js"></script>
     <script src="js/imgLoader.js"></script>
+    <script>
+        imgLoader([
+                './images/ball.png',
+                './images/card_default.png',
+                './images/card_girl.png',
+                './images/card_nothing.png',
+                './images/cry.png',
+                './images/firBg_02.png',
+                './images/firBg_03.png',
+                './images/firBg_04.png',
+                './images/firBg_05.png',
+                './images/girl.png',
+                './images/myPrizeBg_02.png',
+                './images/myPrizeBg_03.png',
+                './images/myPrizeBg_04.png',
+                './images/myPrizePageBtn.png',
+                './images/prizeBg.png',
+                './images/tcBg.png',
+                './images/tcBtn_1.png',
+                './images/tcBtn_2.png'
+        ],function (percentage) {
+            var percentT = percentage * 100;
+            $('#loader_info').html((parseInt(percentT)) + '%');
+            $('#loader__progress')[0].style.width = percentT + '%';
+            if (percentage == 1) {
+                window.setTimeout(function () {
+                    $('#loader').remove();
+                    $('#firstPage').show();
+                },500);
+            }
+        });
+    </script>
 </head>
 <body>
+<!--loading-->
+<div id="loader">
+    <div class="yun">
+        <div id="girl"></div>
+        <div id="ball"></div>
+    </div>
+    <div id="loader_info"></div>
+    <div>
+        <div id="loader__progress"></div>
+    </div>
+    <div></div>
+</div>
 <!--首页-->
 <section id="firstPage">
     <header>

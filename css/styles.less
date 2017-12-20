@@ -1,6 +1,99 @@
 html,body{
   font-family: "Microsoft YaHei";
 }
+@-webkit-keyframes rotate{from{-webkit-transform: rotate(0deg)}
+  to{-webkit-transform: rotate(-360deg)}
+}
+@keyframes rotate{from{transform: rotate(0deg)}
+  to{transform: rotate(-359deg)}
+}
+@-webkit-keyframes bounce-down {
+  25% {-webkit-transform: translateY(-10px);}
+  50%, 100% {-webkit-transform: translateY(0);}
+  75% {-webkit-transform: translateY(10px);}
+}
+@keyframes bounce-down {
+  25% {transform: translateY(-10px);}
+  50%, 100% {transform: translateY(0);}
+  75% {transform: translateY(10px);}
+}
+#loader{
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 1.75rem;
+  width: 7.5rem;
+  height: 12.06rem;
+  background-color: #ff6e00;
+  .yun{
+    position: absolute;
+    top: 4.15rem;
+    left: 1.04rem;
+    width: 5.18rem;
+    height: 4.99rem;
+    background: url("../images/yun_1.png") center no-repeat;
+    background-size: cover;
+    #girl{
+      margin: -2rem auto 0;
+      width: 1.31rem;
+      height: 1.97rem;
+      background: url("../images/girl.png") center no-repeat;
+      background-size: cover;
+      -webkit-animation: bounce-down 1.5s linear infinite;
+      animation: bounce-down 1.5s linear infinite;
+    }
+    #ball{
+      margin: .5rem auto;
+      width: 2.19rem;
+      height: 2.26rem;
+      background: url("../images/ball.png") center no-repeat;
+      background-size: cover;
+      -webkit-transition-property: -webkit-transform;
+      -webkit-transition-duration: 6s;
+      -webkit-animation: rotate 6s linear infinite;
+      animation: rotate 6s linear infinite;
+    }
+  }
+  #loader_info{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2.5rem;
+    margin: auto;
+    font-size: .4rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #ffffff;
+  }
+  div:nth-child(3){
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4.2rem;
+    margin: auto;
+    box-sizing: border-box;
+    padding: .04rem;
+    width: 5.36rem;
+    height: .23rem;
+    border-radius: .2rem;
+    background-color: #ffffff;
+    div{
+      height: 100%;
+      border-radius: .2rem;
+      background-color: #ff4e00;
+    }
+  }
+  >div:last-child{
+    position: absolute;
+    bottom: 0;
+    width: 7.5rem;
+    height: 1.33rem;
+    background: url("../images/yun_2.png") center no-repeat;
+    background-size: cover;
+  }
+}
+#firstPage{
+  display: none;
+}
 #firstPage header{
   position: relative;
   width: 7.5rem;
