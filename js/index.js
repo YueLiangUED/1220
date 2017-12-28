@@ -17,8 +17,9 @@ $(function () {
         flag = 0,
         count = 0;
 
-    function game() {
-        var $this = $(this);
+    function game(e) {
+        console.log();
+        var $this = $(e.target).parent();
         if($gameWrap.find('.act').length <= 1 && $this.hasClass('act') === false){
             $this.addClass('act');
             count++;
