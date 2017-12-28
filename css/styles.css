@@ -164,7 +164,6 @@ body {
   height: 100%;
   transition: all 1s ease;
   transform-style: preserve-3d;
-  backface-visibility: hidden;
 }
 #firstPage main ul li div:nth-child(1) {
   background: url("../images/card_default.png") center no-repeat;
@@ -191,7 +190,7 @@ body {
   z-index: 1;
 }
 #firstPage main ul li.act div:nth-child(2) {
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
   z-index: 2;
 }
 #firstPage footer > div:nth-child(1) {
